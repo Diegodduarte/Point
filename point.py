@@ -1,28 +1,33 @@
 class Point():
 
-    def __init__(self,x,y,x2,y2):
-        self.x = x
-        self.y = y
-        self.x2 = x2
-        self.y2 = y2
+    def __init__(self):
+        self.x = 0
+        self.y = 0
 
-    def SolicitarPontos(x,y,x2,y2):
-        x = float(input('Informe o primeiro Ponto x'))
-        y = float(input('Informe o primeiro Ponto y'))
-        x2 = float(input('Informe o segundo Ponto x'))
-        y2 = float(input('Informe o segundo Ponto y'))
 
-    def __add__(self, other):
+    def SolicitarPontos(self):
+        self.x = float(input('Informe o Ponto x'))
+        self.y = float(input('Informe o Ponto y'))
+
+    def __str__(self):
+        result = 'Ponto 1' + str(self.x)
+        result += 'Ponto 2' + str(self.y)
+        return result
+
+    def __add__(self,other):
         P1x = self.x
         P1y = self.y
-        P2x = self.x2
-        P2y = self.Y2
+        P2x = other.x
+        P2y = other.y
 
-        SomaPontoX = P1x + P2x
-        SomaPontoY = P1y + P2y
-        NovoPontox = SomaPontoX
-        NovoPontoY = SomaPontoY
+        NovoPonto = Point()
 
-        return (NovoPontox,NovoPontoY)
+        NovoPonto.x = P1x + P2x
+        NovoPonto.Y = P1y + P2y
+
+
+        return (NovoPonto)
+
+
 
 
