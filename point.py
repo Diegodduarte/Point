@@ -6,12 +6,12 @@ class Point():
 
 
     def SolicitarPontos(self):
-        self.x = float(input('Informe o Ponto x'))
-        self.y = float(input('Informe o Ponto y'))
+        self.x = float(input('Informe o Ponto x: '))
+        self.y = float(input('Informe o Ponto y: '))
 
     def __str__(self):
-        result = 'Ponto 1' + str(self.x)
-        result += 'Ponto 2' + str(self.y)
+        result = '\nPonto x: '  + str(self.x)
+        result += '\nPonto y: '  + str(self.y)
         return result
 
     def __add__(self,other):
@@ -23,7 +23,7 @@ class Point():
         NovoPonto = Point()
 
         NovoPonto.x = P1x + P2x
-        NovoPonto.Y = P1y + P2y
+        NovoPonto.y = P1y + P2y
 
 
         return (NovoPonto)
