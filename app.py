@@ -1,15 +1,21 @@
 from point import *
 
-P = Point()
+def main(args=[]):
 
+    P1 = Point()
+    P2 = Point()
 
-P1 = Point()
-P2 = Point()
+    print("Ponto 1:")
+    P1.SolicitarPontos()
 
-P1.SolicitarPontos()
-P2.SolicitarPontos()
-PN = Point()
+    print("Ponto 2:")
+    P2.SolicitarPontos()
 
-PN = P1 + P2
+    PN = Point()
 
-print PN
+    PN = P1 + P2
+
+    print PN
+
+if __name__ == "__main__":
+        main()
