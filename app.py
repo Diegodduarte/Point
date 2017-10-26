@@ -15,7 +15,12 @@ def main(args=[]):
 
     PN = P1 + P2
 
-    print PN
+    print (PN)
+
+    if (P1 == P2):
+        print('Iguais')
+    else:
+        print('Diferentes')
 
 if __name__ == "__main__":
         main()

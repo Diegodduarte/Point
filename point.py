@@ -14,6 +14,17 @@ class Point():
         result += '\nPonto y: '  + str(self.y)
         return result
 
+    def __eq__(self, other):
+        P1x = self.x
+        P1y = self.y
+        P2x = other.x
+        P2y = other.y
+
+
+        return (P1x == P2x and P1y == P2y)
+
+
+
     def __add__(self,other):
         P1x = self.x
         P1y = self.y
